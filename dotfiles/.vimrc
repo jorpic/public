@@ -3,6 +3,11 @@
 " gi jump back to last edited position and switch to insert mode
 " / C-F
 
+" TABS
+" a tab can be used, when one wants to temporary edit a file, but does not
+" want to change anything in the current layout of windows and buffers
+" <C-PageUp> and <C-PageDown> will switch between tabs
+" <C-w>T will move the current window to a new tab page
 
 set nocompatible
 
@@ -47,6 +52,13 @@ set backspace=indent,eol,start
 set autoindent    " always set autoindenting on
 set copyindent    " copy the previous indentation on autoindenting
 " set showmatch     " set show matching parenthesis
+
+set foldmethod=indent " fold nested lines
+set foldnestmax=2     " limit number of levels
+set foldminlines=2
+highlight Folded cterm=NONE ctermfg=darkgrey ctermbg=NONE
+set fillchars=fold:\ 
+
 
 set showcmd       " show partial command in status line
 set wildmenu      " show list of variants on <tab>
@@ -166,4 +178,5 @@ let g:rainbow_operators = 1
 " + http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim
 
 " PLUGINS to consider
-" https://github.com/ervandew/supertab
+"  - https://github.com/ervandew/supertab
+"  - https://github.com/vim-scripts/YankRing.vim
