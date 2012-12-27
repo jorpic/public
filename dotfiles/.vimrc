@@ -53,11 +53,20 @@ set autoindent    " always set autoindenting on
 set copyindent    " copy the previous indentation on autoindenting
 " set showmatch     " set show matching parenthesis
 
+
+" == FOLDING
 set foldmethod=indent " fold nested lines
 set foldnestmax=2     " limit number of levels
 set foldminlines=2
 highlight Folded cterm=NONE ctermfg=darkgrey ctermbg=NONE
 set fillchars=fold:\ 
+
+nmap <silent> <leader>a za
+nmap <silent> <leader>A zA
+nmap <silent> <leader>r zr
+nmap <silent> <leader>R zR
+nmap <silent> <leader>m zm
+nmap <silent> <leader>M zM
 
 
 set showcmd       " show partial command in status line
