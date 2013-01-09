@@ -61,8 +61,7 @@ set foldminlines=2
 highlight Folded cterm=NONE ctermfg=darkgrey ctermbg=NONE
 set fillchars=fold:\ 
 
-nmap <silent> <leader>a za
-nmap <silent> <leader>A zA
+nmap <silent> <leader>a zA
 nmap <silent> <leader>r zr
 nmap <silent> <leader>R zR
 nmap <silent> <leader>m zm
@@ -110,6 +109,11 @@ set textwidth=78
 " <F2> in insert mode to :set noautoindent
 set pastetoggle=<F2>
 
+
+" Sessions
+set ssop-=options " do not store global and local values in a session
+nmap <silent> <leader>ss :mksession! .ss<CR> :wqa<CR>
+nmap <silent> <leader>sl :source .ss<CR>
 
 " disable arrow keys
 map <up> <nop>
@@ -189,3 +193,4 @@ let g:rainbow_operators = 1
 " PLUGINS to consider
 "  - https://github.com/ervandew/supertab
 "  - https://github.com/vim-scripts/YankRing.vim
+"  - http://code.google.com/p/conque/
