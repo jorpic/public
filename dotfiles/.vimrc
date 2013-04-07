@@ -112,8 +112,10 @@ set pastetoggle=<F2>
 
 " Sessions
 set ssop-=options " do not store global and local values in a session
-nmap <silent> <leader>ss :mksession! .ss<CR> :wqa<CR>
-nmap <silent> <leader>sl :source .ss<CR>
+nmap <silent> <leader>ss :mksession! .ss.vim<CR> :wa<CR>
+nmap <silent> <leader>sx :mksession! .ss.vim<CR> :wqa<CR>
+nmap <silent> <leader>sl :source .ss.vim<CR>
+nmap <silent> <leader>sp !git ci -am `date` && git push
 
 " disable arrow keys
 map <up> <nop>
