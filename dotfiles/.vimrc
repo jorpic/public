@@ -196,3 +196,4 @@ let g:rainbow_operators = 1
 "  - https://github.com/ervandew/supertab
 "  - https://github.com/vim-scripts/YankRing.vim
 "  - http://code.google.com/p/conque/
+"  - https://github.com/eagletmt/ghcmod-vim
