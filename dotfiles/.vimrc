@@ -156,7 +156,7 @@ set viminfo^=%
 "
 "  <c-t> "    Open the selected file in a new 'tab'.
 "  <c-v> "    Open the selected file in a 'vertical' split.
-let g:ctrlp_map = '<c-p>'
+let g:ctrlp_map = '<c-l>'
 " Search in files, buffers and MRU files at the same time.
 let g:ctrlp_cmd = 'CtrlPMixed'
 let g:ctrlp_by_filename = 1 " Search by filename (as opposed to full path)

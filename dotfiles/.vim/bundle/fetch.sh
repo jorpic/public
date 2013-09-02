@@ -6,3 +6,4 @@ git clone https://github.com/scrooloose/nerdtree
 git clone https://github.com/jceb/vim-editqf
 git clone https://github.com/tpope/vim-fugitive
 get clone https://github.com/vim-scripts/Rainbow-Parentheses-Improved-and2
+git clone https://github.com/vim-scripts/YankRing.vim
