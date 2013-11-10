@@ -115,7 +115,7 @@ set ssop-=options " do not store global and local values in a session
 nmap <silent> <leader>ss :mksession! .ss.vim<CR> :wa<CR>
 nmap <silent> <leader>sx :mksession! .ss.vim<CR> :wqa<CR>
 nmap <silent> <leader>sl :source .ss.vim<CR>
-nmap <silent> <leader>sp !git ci -am `date` && git push
+nmap <silent> <leader>sp :!git add * && git ci -m "`date`" && git push<CR>
 
 " disable arrow keys
 map <up> <nop>
@@ -150,13 +150,17 @@ autocmd BufReadPost *
 " Remember info about open buffers on close
 set viminfo^=%
 
+" === YankRing
+
+let g:yankring_replace_n_pkey = '<c-m>'
+let g:yankring_replace_n_nkey = '<c-n>'
 
 " === CTRL-P Fuzzy search
 " https://github.com/kien/ctrlp.vim
 "
 "  <c-t> "    Open the selected file in a new 'tab'.
 "  <c-v> "    Open the selected file in a 'vertical' split.
-let g:ctrlp_map = '<c-l>'
+let g:ctrlp_map = '<c-p>'
 " Search in files, buffers and MRU files at the same time.
 let g:ctrlp_cmd = 'CtrlPMixed'
 let g:ctrlp_by_filename = 1 " Search by filename (as opposed to full path)
@@ -184,6 +188,10 @@ nmap <silent> <F3> :NERDTreeToggle<CR>
 " https://github.com/vim-scripts/Rainbow-Parentheses-Improved-and2
 let g:rainbow_active = 1
 let g:rainbow_operators = 1
+
+
+let g:hardtime_default_on = 1
+
 
 " REFS
 " - http://nvie.com/posts/how-i-boosted-my-vim/
