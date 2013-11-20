@@ -25,4 +25,4 @@ jq -s \
   ]' \
   issues_page*.json > issues.json
 
-jq '.[] | [.[]] | @csv' issues.json > issues.csv
+jq -r '.[] | [.[]] | @csv' issues.json > issues.csv
