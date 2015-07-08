@@ -6,6 +6,8 @@
   ci = commit
   st = status
   br = branch
+  ps = push
+  pl = pull
 [push]
   default = simple
 [color]
