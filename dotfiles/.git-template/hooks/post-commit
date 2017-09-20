@@ -1,5 +1,7 @@
 #!/bin/bash
 
+exit 0
+
 DIR=`pwd`
 while [[ ! -d '.git' ]] ; do
   cd ..

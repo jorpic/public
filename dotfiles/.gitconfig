@@ -17,3 +17,5 @@
   status = auto
 [init]
   templatedir = ~/.git-template
+[commit]
+	gpgsign = false
